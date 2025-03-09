@@ -1,10 +1,22 @@
+import About from "./components/About";
+import Features from "./components/Feature";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+
 function App() {
   return (
     <>
-      <div className="bg-red-500 text-center">
-        App
-        <h1 className="text-white font-bold text-2xl">asdsd</h1>
-      </div>
+      <section className="min-h-screen relative">
+        <Hero />
+        <div className="relative z-0 h-full flex flex-col justify-between">
+          <div>
+            <Header />
+            <About />
+          </div>
+          <Features />
+        </div>
+      </section>
+      <section>sad</section>
     </>
   );
 }
