@@ -1,11 +1,11 @@
 import type { AppProps } from "next/app";
 import "@/styles/globals.css";
-import { NavTop } from "@/components/NavTop";
+
+import { FONT_SUIT } from "@/styles/font";
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <main className="w-full max-w-[1200px] mx-auto">
-            <NavTop />
+        <main className={`${FONT_SUIT.variable}`}>
             <Component {...pageProps} />
         </main>
     );
